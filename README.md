@@ -1,3 +1,6 @@
+# Instructions for Running APP
+Got to the GetID_Responce.txt file
+
 # Receipt Processor
 
 Build a webservice that fulfils the documented API. The API is described below. A formal definition is provided 
