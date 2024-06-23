@@ -1,6 +1,59 @@
 # Instructions for Running APP
 Got to the GetID_Responce.txt file to get instructions or read here:
 
+##### This application used Python: Use "pip install -r requirements" command to install dpendancies. #####
+##### Run the app using "python3 app.py" command in the receipt-pocessor-challenge folder ######
+##### Click on local link and you should get 'Welcome to Receipt Processor App' on the browser #####
+#####  In the receipt-pocessor-challenge folder, write this command in the terminal ######
+
+
+curl -X POST \
+  http://127.0.0.1:5000/receipts/process \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "retailer": "Target",
+        "purchaseDate": "2022-01-01",
+        "purchaseTime": "13:01",
+        "items": [
+          {
+            "shortDescription": "Mountain Dew 12PK",
+            "price": "6.49"
+          },
+          {
+            "shortDescription": "Emils Cheese Pizza",
+            "price": "12.25"
+          },
+          {
+            "shortDescription": "Knorr Creamy Chicken",
+            "price": "1.26"
+          },
+          {
+            "shortDescription": "Doritos Nacho Cheese",
+            "price": "3.35"
+          },
+          {
+            "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
+            "price": "12.00"
+          }
+        ],
+        "total": "35.35"
+      }'
+
+##### You should get an ID: Example ########
+     
+{
+  "id": "1feef4e4-c9d2-477e-b41c-091174532604"
+}
+
+##### Once you have the ID, run this command. You should enter your ID where "12345" is. #####
+
+curl http://127.0.0.1:5000/receipts/12345/points
+
+##### You will get the points #####
+{
+  "points": 28
+}
+
 # Receipt Processor
 
 Build a webservice that fulfils the documented API. The API is described below. A formal definition is provided 
