@@ -4,7 +4,7 @@ Got to the GetID_Responce.txt file to get instructions or read here:
 ##### This application used Python: Use "pip install -r requirements" command to install dpendancies. #####
 ##### Run the app using "python3 app.py" command in the receipt-pocessor-challenge folder ######
 ##### Click on local link and you should get 'Welcome to Receipt Processor App' on the browser #####
-#####  In the receipt-pocessor-challenge folder, write this command in the terminal ######
+#####  In the receipt-processor-challenge folder, write this command in the terminal ######
 
 
 curl -X POST \
