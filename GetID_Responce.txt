@@ -34,7 +34,7 @@ curl -X POST \
         "total": "35.35"
       }'
 
-##### You should get an ID ########
+##### You should get an ID: Example ########
      
 {
   "id": "1feef4e4-c9d2-477e-b41c-091174532604"
