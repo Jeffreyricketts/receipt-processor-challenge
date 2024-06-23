@@ -1,5 +1,5 @@
 # Instructions for Running APP
-Got to the GetID_Responce.txt file
+Got to the GetID_Responce.txt file to get instructions or read here:
 
 # Receipt Processor
 
